@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAI Security Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="login-page">
+        <h2>AAI Security Guard Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="dashboard" id="dashboard" style="display: none;">
+        <h2>Visitor Management System</h2>
+        <div class="Visitor-form">
+            <input type="text" id="Visitor-name" placeholder="Visitor Name">
+            <input type="text" id="Visitor-address" placeholder="Address">
+            <input type="text" id="Visitor-phone" placeholder="Phone">
+            <input type="email" id="Visitor-email" placeholder="Email">
+            <button onclick="checkInVisitor()">Check-In</button>
+        </div>
+        
+        <h3>Visitor Log</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Check-In Date</th>
+                    <th>Check-In Time</th>
+                    <th>Check-Out Date</th>
+                    <th>Check-Out Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="visitor-log"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

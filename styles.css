@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('aai-logo.png') no-repeat center center fixed;
+    background-size: 250px;
+    background-color: rgba(240, 248, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Headings */
+h2, h3 {
+    color: #003366;
+    text-align: center;
+}
+
+/* Login & Dashboard Container */
+.login-container, .dashboard {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Input & Buttons */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #002244;
+}
+
+/* Dashboard Adjustments */
+.dashboard {
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Visitor Form */
+.Visitor-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.Visitor-form input {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Table Adjustments */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Make table scrollable on small screens */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .login-container, .dashboard {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .Visitor-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Visitor-form input {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-container, .dashboard {
+        padding: 10px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 4px;
+    }
+}
