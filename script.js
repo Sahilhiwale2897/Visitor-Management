@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 });
 
-const API_URL = "http://localhost:8080/api/visitors";
+const API_URL = "http://sahilhiwale2897.github.io/Visitor-Management/";
 
 document.addEventListener("DOMContentLoaded", function () {
     fetchVisitors();
